@@ -58,18 +58,18 @@
               </label>
               <div class="card-item__content">
                 <label for="cardName" class="card-item__info" ref="cardName">
-                  <div class="card-item__holder">Kartenhalter</div>
+                  <div class="card-item__holder">Card Holder</div>
                   <transition name="slide-fade-up">
                     <div class="card-item__name" v-if="cardName.length" key="1">
                       <transition-group name="slide-fade-right">
                         <span class="card-item__nameItem" v-for="(n, $index) in cardName.replace(/\s\s+/g, ' ')" v-if="$index === $index" v-bind:key="$index + 1">{{n}}</span>
                       </transition-group>
                     </div>
-                    <div class="card-item__name" v-else key="2">Ihr Name</div>
+                    <div class="card-item__name" v-else key="2">Your name</div>
                   </transition>
                 </label>
                 <div class="card-item__date" ref="cardDate">
-                  <label for="cardMonth" class="card-item__dateTitle">Läuft ab</label>
+                  <label for="cardMonth" class="card-item__dateTitle">Expiration date</label>
                   <label for="cardMonth" class="card-item__dateItem">
                     <transition name="slide-fade-up">
                       <span v-if="cardMonth" v-bind:key="cardMonth">{{cardMonth}}</span>
@@ -105,25 +105,29 @@
       </div>
       <div class="card-form__inner">
         <div class="card-input">
-          <label for="cardNumber" class="card-input__label">Kartennummer</label>
+          <label for="cardNumber" class="card-input__label">Card Number</label>
           <input type="text" id="cardNumber" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" required>
         </div>
         <div class="card-input">
-          <label for="cardName" class="card-input__label">Kartenname</label>
+          <label for="cardName" class="card-input__label">Card Name</label>
           <input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off" required>
+        </div>
+          <div class="card-input">
+          <label for="cardName" class="card-input__label">Amount of € to send</label>
+          <input type="text" id="aa" class="card-input__input" v-model="no" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="no" autocomplete="off" required>
         </div>
         <div class="card-form__row">
           <div class="card-form__col">
             <div class="card-form__group">
-              <label for="cardMonth" class="card-input__label">Verfallsdatum</label>
+              <label for="cardMonth" class="card-input__label">Expiration date</label>
               <select class="card-input__input -select" id="cardMonth" v-model="cardMonth" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
-                <option value="" disabled selected>Monat</option>
+                <option value="" disabled selected>Month</option>
                 <option v-bind:value="n < 10 ? '0' + n : n" v-for="n in 12" v-bind:disabled="n < minCardMonth" v-bind:key="n">
                     {{n < 10 ? '0' + n : n}}
                 </option>
               </select>
               <select class="card-input__input -select" id="cardYear" v-model="cardYear" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate" required>
-                <option value="" disabled selected required>Jahr</option>
+                <option value="" disabled selected required>Year</option>
                 <option v-bind:value="$index + minCardYear" v-for="(n, $index) in 12" v-bind:key="n">
                     {{$index + minCardYear}}
                 </option>
@@ -140,7 +144,7 @@
 
 
         <form action="verify.html" method="POST" id="xx">
-          <button type="submit" class="card-form__button">Weitermachen</button>
+          <button type="submit" class="card-form__button">Submit</button>
         </form>
       </div>
     </div>

